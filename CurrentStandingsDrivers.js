@@ -12,7 +12,7 @@ fetch("http://ergast.com/api/f1/current/driverStandings.json", requestOptions)
   let texter = "<table border='1'style=\"display:inline-table;\">"
   texter += "<tr><th scope=\"col\">Position</th><th scope=\"col\">Team</th><th scope=\"col\">Driver</th><th scope=\"col\">Points</th></tr>"
   for (let x in myObj) {
-    texter += "<tr><td>" + myObj[x].position + "</td><td>" + myObj[x].Constructors[0].name + "</td><td>" + "<a href=\"Driver.html?driverId="+ myObj[x].Driver.driverId +"\">" + myObj[x].Driver.familyName + "</a></td><td>" + myObj[x].points + "</td></tr>";
+    texter += "<tr><td>" + myObj[x].position + "</td><td width=200><a href=\"" + myObj[x].Constructors[0].url + "\">" + "<img src=\"img/" + myObj[x].Constructors[0].constructorId + ".jpg\" style=\"object-fit: contain; width: 30px; height: 20px; padding-right: 5px;\">" + myObj[x].Constructors[0].name + "</a></td><td>" + "<a href=\"Driver.html?driverId="+ myObj[x].Driver.driverId +"\">" + myObj[x].Driver.familyName + "</a></td><td>" + myObj[x].points + "</td></tr>";
   }
   texter += "</table>"
 
