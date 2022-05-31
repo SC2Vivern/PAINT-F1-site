@@ -12,7 +12,7 @@ fetch("http://ergast.com/api/f1/current/constructorStandings.json", requestOptio
   let texter = "<table border='1'style=\"display:inline-table;\">"
   texter += "<tr><th scope=\"col\">Position</th><th scope=\"col\">Team</th><th scope=\"col\">Points</th></tr>"
   for (let x in myObj) {
-    texter += "<tr><td>" + myObj[x].position + "</td><td><a href=\"" + myObj[x].Constructor.url + "\">" + myObj[x].Constructor.name + "</a></td><td>" + myObj[x].points + "</td></tr>";
+    texter += "<tr><td>" + myObj[x].position + "</td><td width=200><a href=\"" + myObj[x].Constructor.url + "\">" + "<img src=\"img/" + myObj[x].Constructor.constructorId + ".jpg\" style=\"object-fit: contain; width: 30px; height: 20px; padding-right: 5px; align=\">" + myObj[x].Constructor.name + "</a></td><td>" + myObj[x].points + "</td></tr>";
   }
   texter += "</table>"
 
