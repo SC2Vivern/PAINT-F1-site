@@ -19,7 +19,7 @@ fetch(newUrl, requestOptions)
   texter += "<table border='1'style=\"display:inline-table;\">"
   texter += "<tr><th scope=\"col\">Position</th><th scope=\"col\">Team</th><th scope=\"col\">Driver</th><th scope=\"col\">Points</th></tr>"
   for (let x in myObj) {
-    texter += "<tr><td>" + myObj[x].position + "</td><td>" + myObj[x].Constructor.name + "</td><td>" + "<a href=\"Driver.html?driverId="+ myObj[x].Driver.driverId +"\">" + myObj[x].Driver.familyName + "</a></td><td>" + myObj[x].points + "</td></tr>";
+    texter += "<tr><td>" + myObj[x].position + "</td><td><a href=\"" + myObj[x].Constructor.url + "\">" + myObj[x].Constructor.name + "</a></td><td>" + "<a href=\"Driver.html?driverId="+ myObj[x].Driver.driverId +"\">" + myObj[x].Driver.familyName + "</a></td><td>" + myObj[x].points + "</td></tr>";
   }
   texter += "</table>"
 
