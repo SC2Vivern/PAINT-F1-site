@@ -1,5 +1,7 @@
 # PAINT-F1-site
 
+Projekt samodzielny: **Kamil Kamiński**
+
 The idea behind the project is to allow for easy access to information about the current season of Formula 1, as well as some basic information about the drivers.
 
 The project uses HTML, CSS and JavaScript. HTML is used as a base/frame and navigation, CSS for the small amount of styling and JavaScript to fetch data from the Ergast API and injecting it into the HMTL elements.
