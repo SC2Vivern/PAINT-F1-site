@@ -1,6 +1,6 @@
 # PAINT-F1-site
 
-Projekt samodzielny: **Kamil Kamiński**
+Zespół projektowy: **Kamil Kamiński**
 
 The idea behind the project is to allow for easy access to information about the current season of Formula 1, as well as some basic information about the drivers.
 
